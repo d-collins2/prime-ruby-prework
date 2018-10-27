@@ -1,6 +1,12 @@
 # Add  code here!
 def prime?(num)
   return false if num <= 0 
-  (2..num).each{ |n| return true if num % n == 0 }
-  return false    
+  arr = []
+  (2..num).each{ |n| arr << n if num % n == 0 }
+ 
+  if arr.size == 2 
+    return true 
+  else 
+    return false
+  end 
 end 
