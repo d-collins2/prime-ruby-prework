@@ -5,8 +5,8 @@ def prime?(num)
   (2..num).each{ |n| arr << n if num % n == 0 }
  
   if arr.size == 2 
-    return true 
+    return false  
   else 
-    return false
+    return true 
   end 
 end 
